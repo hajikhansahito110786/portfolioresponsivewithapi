@@ -1,5 +1,6 @@
 import Image from "next/image"
 import img from "./butterfly1.jpg"
+import Api1 from "./api/api1";
 
 export default function Sidebar() {
  
@@ -21,7 +22,7 @@ export default function Sidebar() {
             </div>
            {/*social mediaimage*/}
             {/*cv button */}
-          
+          <Api1/>
         </div>
       );
     }

@@ -1,10 +1,34 @@
 import React from 'react'
 import Sidebar from './sidebar'
 import Detail from './detail'
+import Mcard1 from './mcard'
 
 const Startup = () => {
   return (
-    <div className="flex overflow-hidden h-screen" >
+    <div>
+
+      <div className="overflow-x-hidden bg-slate-400 h-screen md:hidden">
+ {/*    mobileview below */}
+
+hello small screen
+{
+  /*card1*/
+}
+<Mcard1/>
+  {
+  /*education*/
+}
+  {
+  /*skill*/
+}
+  {
+  /*project*/
+}
+
+
+      </div>
+      {/*    destopview below */}
+    <div className="hidden md:flex md:overflow-hidden md:h-screen" >
 
 <div className="w-1/15">
 
@@ -17,6 +41,7 @@ const Startup = () => {
 </div>
 
 
+    </div>
     </div>
   )
 }
